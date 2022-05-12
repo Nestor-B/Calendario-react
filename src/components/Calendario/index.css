@@ -1,0 +1,73 @@
+/* 
+    CALENDARIO REACT JS
+    ESTILOS CSS 
+*/
+
+:root {
+    --backColorCalendar: whitesmoke;
+}
+
+.container-calendary {
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid rgba(12, 12, 11, .1);
+    padding: 1em;
+    background-color: var(--backColorCalendar);
+}
+
+.container-calendary .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container-calendary .grid div {
+    padding: 1em;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(253, 253, 253);
+}
+
+.npointer {
+    cursor: default !important;
+}
+
+.container-calendary .hoy {
+    background: orangered;
+    color: rgb(12, 12, 11);
+    text-shadow: 0 1px 1px rgb(255, 254, 254);
+}
+.container-calendary .evento {
+    background-color: darkcyan;
+}
+.container-calendary .diaActual{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.container-calendary .__SeleccionMesAnio__ {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.__SeleccionMesAnio__ > div {
+    display: flex;
+    align-items: center;
+}
+
+.__SeleccionMesAnio__ > div h3 {
+    padding: 10px;
+}
+
+/* .grid.fade {
+    transition-delay: 50s;
+    transition: 1s;
+    opacity: 1;
+    color: red;
+} */
